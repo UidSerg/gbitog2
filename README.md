@@ -24,15 +24,50 @@
 
 Desktop Documents Downloads HumanFriends.txt Music PackAnimals.txt Pets.txt Pictures Videos
 
+        1  cat > Pets.txt
+        2  cat > PackAnimals.txt
+        3  cat Pets.txt PackAnimals.txt > HumanFriends.txt
+        4  cat HumanFriends.txt 
+        5  ls
+        6  history
+
+
 ![скрин](work_1.jpg)
 
 2. Работа с директориями в Linux
 
 - Создать новую директорию и переместить туда файл "Human Friends".
 
+        7  mkdir control_work
+        8  mv HumanFriends.txt control_work/HumanFriends.txt
+        9  cd control_work
+        10  ls
+        11  history
+
+![скрин2](work_2.jpg)
+
 3. Работа с MySQL в Linux. “Установить MySQL на вашу вычислительную машину ”
 
-- Подключить дополнительный репозиторий MySQL и установить один из пакетов из этого репозитория.
+- Подключить дополнительный репозиторий MySQL и установить один из пакетов из этого репозитория.    
+    
+        12  sudo apt install nginx
+        13  sudo apt install curl
+        14  curl localhost
+        15  sudo apt install mysql-server
+        16  sudo mysql_secure_installation
+        17  sudo mysql
+            mysql>SELECT * FROM mysql.user;
+            mysql>ALTER USER 'root'@'localhost' IDENTIFIED WITH caching_sha2_password BY '12355321';
+            mysql>exit
+        18  sudo mysql -u root -p
+            mysql>CREATE USER 'newuser'@'localhost' IDENTIFIED BY '12pass21';
+            mysql>SELECT * FROM mysql.user;
+            mysql>exit
+        19  sudo mysql -u newuser -p
+        20  sudo apt install php
+        21  info php
+        22  history
+
 
 4. Управление deb-пакетами
 
