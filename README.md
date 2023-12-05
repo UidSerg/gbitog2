@@ -64,17 +64,32 @@ Desktop Documents Downloads HumanFriends.txt Music PackAnimals.txt Pets.txt Pict
             mysql>SELECT * FROM mysql.user;
             mysql>exit
         19  sudo mysql -u newuser -p
-        20  sudo apt install php
-        21  info php
-        22  history
+        20  history
 
 
 4. Управление deb-пакетами
 
 - Установить и затем удалить deb-пакет, используя команду `dpkg`.
 
+        21  wget https://download.virtualbox.org/virtualbox/7.0.10/virtualbox-7.0_7.0.10-158379~Ubuntu~jammy_amd64.deb
+        22  ll
+        23  sudo dpkg -i virtualbox-7.0_7.0.10-158379~Ubuntu~jammy_amd64.deb
+        24  virtualbox --help
+
+![скрин4](work_4.jpg)
+        
+        25  sudo dpkg -r virtualbox-7.0
+        26  virtualbox --help
+
+
+![скрин41](work_41.jpg)
+
+        27  history
+
 5. История команд в терминале Ubuntu
 
 - Сохранить и выложить историю ваших терминальных команд в Ubuntu.
 
 В формате: Файла с ФИО, датой сдачи, номером группы(или потока)
+
+   [История в файле](Damchenko_S.I.4589_05.12.23.txt "Дамченко С.И дата: 05/12/23 ГР4589")
