@@ -313,6 +313,10 @@ join various_animals va ON a.various_animals=va.id_v
 join type_animal t ON va.id_t=t.id_t
 GROUP BY a.id, a.name, a.birthdate, a.various_animals, va.name_v;  
 ```
+> Файл с SQL запросами: [запросы SQL](bd.sql "запросы SQL")
+
+<hr/>
+<hr/>
 
 ### 8. ООП и Java
 
