@@ -34,6 +34,23 @@ COLLATE = utf8_unicode_ci;
 INSERT INTO `human friends`.`type_animal` (`name_t`) VALUES ('домашние');
 INSERT INTO `human friends`.`type_animal` (`name_t`) VALUES ('въючные'); 
 
+-- таблица род(вид) животных (кошка, собака, осел и тд)
+CREATE TABLE `human friends`.`various_animals` (
+  `id_v` INT NOT NULL AUTO_INCREMENT,
+  `name_v` VARCHAR(45) NULL,
+  `id_t` INT NULL,
+  PRIMARY KEY (`id_v`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8
+COLLATE = utf8_unicode_ci;
+-- заполняем
+INSERT INTO `human friends`.`various_animals` (`name_v`, `id_t`) VALUES ('Cat', 1),
+        ('Dog', 1),
+        ('Hamster', 1),
+        ('Horse', 2),
+        ('Camel', 2),
+        ('Donkey', 2);
+
 -- заполняем таблицу животных
 INSERT INTO `human friends`.`animals` (`name`, `birthdate`, `various_animals`)
 VALUES('Fido', '2020-01-01', 2),
