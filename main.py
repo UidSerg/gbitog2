@@ -10,21 +10,24 @@ def main_menu():
                        "2. Добавить животное\n"
                        "3. Обучить животное\n"
                        "4. Отсортировать по дате рождения\n"
-                       "5. Найти\n"
-                       "6. Exit\n")
+                       "5. Узнать команды животного\n"
+                       "6. показать случайное животное\n"
+                       "7. Exit\n")
         match answer:
             case "1":
                 func.show_all()
             case "2":
-                play = False
+                func.add_animal()
             case "3":
-                play = False           
+                func.to_teach()        
             case "4":
                 func.show_all_date()
             case "5":
                 func.search()
             case "6":
-                play = False
+                func.rand_animal()
+            case "7":
+                play = False    
             case _:
                 print("Не известная команда, повторите ввод \n")
 
